@@ -1,381 +1,140 @@
 @charset "UTF-8";
-/* CSS Document */
+/* General Styles */
 body {
-    font-family:'Montserrat Thin Black', 'Montserrat Thin Regular', 'Montserrat Thin Medium', 'Source Code Pro', 'Source Code Pro Black';
-	font-size: 15px;
+    font-family: 'Montserrat', sans-serif;
     margin: 0;
-
-}
-.logo {
-    width: 230px; /* Adjust the width to your desired size */
-    height: auto; /* Maintain aspect ratio */
-}
-.button-container {
-  text-align: center;
-  margin-top: 50px;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
 }
 
-.button {
-  padding: 10px 30px;
-  font-size: 18px;
-  background-color: #ffffff; /* White background */
-  color: #000000; /* Black text */
-  border: 2px solid #000;
-  border-radius: 50px; /* To make it oval */
-  cursor: pointer;
-  text-decoration: none;
-  margin: 5px;
-  display: inline-block;
-  transition: background-color 0.3s, color 0.3s; 
-  font-family: 'Montserrat', sans-serif;
-}
-
-.button:hover {
-  background-color: #000000; /* Black background on hover */
-  color: #ffffff; /* White text on hover */
-}
+/* Navigation Bar */
 .flexNav {
     display: flex;
-    justify-content: space-between; /* Spread items out along the flex container */
-    align-items: center;
-}
-/* css grid resume pg. */
-.resumeGrid1 {
-	display: grid;
-	grid-template-columns: 1fr 1fr;
-	margin: 1em 8em;
-}
-.resumeGridLeft {
-	grid-column: 1/2;
-}
-.resumeGridRight {
-	grid-column: 2/3;
-}
-.resumeGrid1 h1,
-.resumeGrid1 h2,
-.resumeGrid1 p {
-    font-family: 'Montserrat', sans-serif;
-}
-.image-container {
-    display: flex;
     justify-content: center;
-}
-
-.centered-image {
-    max-width: 100%;
-}
-/* Button styles */
-.btn-rounded-white {
-    display: inline-block;
-    background-color: #fff;
-    color: #000;
-    border: 2px solid #000;
-    border-radius: 20px;
-    padding: 10px 20px;
-    text-decoration: none;
-    transition: background-color 0.3s, color 0.3s, border-color 0.3s;
-}
-
-.btn-rounded-white:hover {
-    background-color: #000;
-    color: #fff;
-    border-color: #000;
-}
-
-ul {
-    display: flex; /* Make the <ul> a flex container */
-    list-style-type: none;
-    padding: 0; /* Remove default padding */
-    margin: 0; /* Remove default margin */
-}
-
-.linkedin-icon {
-    font-size: 35px;
-    color: #0077b5;
-}
-
-.linkedin-icon:hover {
-    color: #004471;
-}
-
-.montserrat-font {
-    font-family: 'Montserrat', sans-serif;
-}
-.logo {
-    width: 100px; 
-    height: auto; 
-	margin-right: 870px
-}
-
-.flexNav {
-    display: flex;
-    align-items: center;
-}
-li {
-    float: left;
-}
-ul {
-    list-style-type: none;
-}
-
-nav a {
-    color: #000;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-    border-bottom: 1px solid transparent; 
-}
-
-nav a:hover {
-    background-color: #ddd;
-}
-
-nav .active {
-    border-bottom: 1px solid #000; 
-}
-
-.button {
-    display: flex;
-    justify-content: center;
-}
-
-.learn-more-button {
-    display: inline-block;
-    padding: 10px 20px;
-    background-color: #fff;
-    color: #000;
-    text-decoration: none;
-    border: 2px solid #000;
-    border-radius: 5px;
-}
-
-.learn-more-button:hover {
-    background-color: black;
-    color: white;
-}
-
-.about-section {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 100vh;
-    text-align: center;
-}
-
-.main-heading {
-    font-size: 3em;
-    margin-bottom: 3em;
-    color: black;
-	text-align: center;
-}
-
-.sub-heading {
-    font-size: 1.5em;
-    color: #000000;
-    margin-bottom: 20px;
-	text-align: center;
-}
-
-.image-container {
-    float: left;
-    margin-right: 20px;
-}
-
-img {
-    max-width: 75%;
-    height: auto;
-}
-
-
-
-
-.container {
-    display: flex;
-}
-
-.flexNav {
-    background-color: #fff;
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-end; 
-    align-items: center;
-}
-li {
-	float: left;
-}
-ul {
-	list-style-type: none;
-}
-
-nav a {
-    color: #000;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-    border-bottom: 1px solid transparent; 
-}
-
-nav a:hover {
-    background-color: #ddd;
-}
-
-nav .active {
-    border-bottom: 1px solid #000; 
-}
-.button {
-	display: flex;
-	justify-content: center;
-}
-.learn-more-button {
-    display: inline-block;
-    padding: 10px 20px;
-    background-color: #fff;
-    color: #000;
-    text-decoration: none;
-    border: 2px solid #000;
-    border-radius: 5px;
-}
-.learn-more-button:hover {
-	background-color: black;
-	color: white;
-}
-
-.about-section {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 100vh;
-    text-align: center;
-}
-
-.main-heading {
-    font-size: 2em;
-    margin-bottom: 10px;
-    color: black; 
-}
-
-.sub-heading {
-    font-size: 1.5em;
-    color: #000000;
-    margin-bottom: 20px;
-}
-
-.image-container {
-    float: left;
-    margin-right: 20px;
-}
-
-img {
-    max-width: 75%;
-    height: auto;
-}
-
-/* Apply Montserrat font to specific elements */
-.main-heading,
-.learn-more-button {
-    font-family: 'Montserrat', sans-serif;
-}
-
-.sub-heading {
-    font-family: 'Montserrat', sans-serif; /* Change this to the original font used for sub-heading */
-}
-
-.logo {
-    width: 120px; /* Adjust the width to your desired size */
-    height: auto; /* Maintain aspect ratio */
-}
-
-.flexNav {
-    padding: 15px 0;
-    text-align: center;
+    background-color: #333;
+    padding: 10px;
 }
 
 .flexNav ul {
+    list-style-type: none;
     padding: 0;
     margin: 0;
-    list-style: none;
     display: flex;
-    justify-content: center;
 }
 
 .flexNav ul li {
-    margin: 0 10px;
+    margin: 0 15px;
 }
 
 .flexNav ul li a {
-    color: black; /* Change the color to your desired color */
+    color: #fff;
     text-decoration: none;
+    padding: 10px;
     font-size: 18px;
-    padding: 10px 15px;
 }
 
 .flexNav ul li a:hover {
-    background-color: #ddd; /* Change the background color on hover if desired */
+    background-color: #ddd;
+    border-radius: 5px;
 }
 
-.container {
+/* Home Section */
+.about-section {
     display: flex;
-    flex-direction: column;
     align-items: center;
     justify-content: center;
-    height: 100vh; /* Make the container take up the full viewport height */
-	margin-top: 40vh; 
-}
-.main-heading {
-    margin-top: 5vh; /* Adjust the margin-top value to move the section higher up */
-}
-
-.contact-info {
-    margin-top: 25px;
+    padding: 60px 20px;
+    background-color: #fff;
     text-align: center;
 }
 
-body {
-  font-family: Arial, sans-serif;
+.image-container {
+    margin-right: 20px;
 }
 
-.container {
-  display: flex;
-  justify-content: space-between;
-  margin-bottom: 20px;
+.image-container img {
+    width: 250px;
+    height: auto;
+    border-radius: 50%;
 }
 
-.left {
-  flex: 1;
+.main-heading {
+    font-size: 2.5em;
+    color: #333;
 }
 
-.right {
-  flex: 2;
+.sub-heading {
+    font-size: 1.5em;
+    color: #666;
+    margin: 20px 0;
 }
 
-h1 {
-  font-size: 24px;
-  margin-bottom: 5px;
+.learn-more-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #000;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 1.2em;
 }
 
-h2 {
-  font-size: 20px;
-  color: #666;
-  margin-bottom: 5px;
+.learn-more-button:hover {
+    background-color: #444;
+}
+
+/* Resume Section */
+.resume-section {
+    padding: 50px 20px;
+    background-color: #fff;
+    color: #333;
+}
+
+.resumeGrid1 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+}
+
+.resumeGridLeft, .resumeGridRight {
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+}
+
+h2.section-title {
+    text-align: center;
+    font-size: 2.5em;
+    margin-bottom: 30px;
+}
+
+/* Resume Details */
+h3 {
+    font-size: 1.5em;
+    margin-top: 20px;
 }
 
 ul {
-  list-style-type: none;
-  padding: 0;
+    list-style-type: disc;
+    margin-left: 20px;
 }
 
-li {
-  margin-bottom: 5px;
+ul li {
+    margin-bottom: 10px;
 }
 
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+    .resumeGrid1 {
+        grid-template-columns: 1fr;
+    }
 
-@media screen and (max-width: 786px) {
-	.resumeGrid1 {
-		display: grid;
-		grid-template-columns: 1fr;
-		margin: 1em 3em;
-	}
-	.resumeGridLeft, .resumeGridRight {
-		grid-column: 1/2;
-	}
+    .about-section {
+        flex-direction: column;
+    }
+
+    .image-container {
+        margin-bottom: 20px;
+    }
 }
