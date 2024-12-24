@@ -54,9 +54,11 @@ body {
 }
 
 .image-container img {
-    width: 250px;
-    height: auto;
-    border-radius: 50%;
+    width: 250px; /* Ensures the image has a fixed width */
+    height: 250px; /* Matches the width to create a perfect circle */
+    border-radius: 50%; /* Makes the image circular */
+    object-fit: cover; /* Ensures the image is cropped properly within the circle */
+    border: 5px solid #333; /* Optional: Add a border for aesthetics */
 }
 
 .main-heading {
